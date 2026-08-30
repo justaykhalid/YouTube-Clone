@@ -1,0 +1,133 @@
+:root {
+    /* ===== Base ===== */
+    --bg: #0f0f0f;
+    --surface: #181818;
+    --surface-hover: #272727;
+    --surface-light: #f9f9f9;
+
+    /* ===== Text ===== */
+    --text-primary: #f1f1f1;
+    --text-secondary: #aaaaaa;
+    --text-muted: #717171;
+
+    /* ===== Brand ===== */
+    --youtube-red: #ff0000;
+    --youtube-red-hover: #cc0000;
+
+    /* ===== Borders / Dividers ===== */
+    --border: #303030;
+    --border-light: #e5e5e5;
+
+    /* ===== Icons ===== */
+    --icon: #f1f1f1;
+    --icon-muted: #aaaaaa;
+
+    /* ===== Status ===== */
+    --success: #2ba640;
+    --error: #ff4e45;
+
+    /* ===== Light Mode ===== */
+    --light-bg: #ffffff;
+    --light-surface: #f2f2f2;
+    --light-hover: #e5e5e5;
+    --light-text: #0f0f0f;
+    --light-text-secondary: #606060;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar_bottom {
+    /* background-color: var(--light-surface); */
+    width: 100%;
+    border-top: 1px solid var(--border);
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.youtube_top_txt {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.recomendation_txt {
+    overflow: scroll;
+}
+
+.top_yt_app {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.icon_top {
+    display: flex;
+    gap: 1em;
+}
+
+.recomendation_txt {
+    display: flex;
+    gap: 0.2em;
+    justify-content: space-evenly;
+}
+
+.recomendation_txt span:nth-of-type(1),
+.recomendation_txt span:last-child {
+    margin-left: 1em;
+}
+
+.recomendation_txt::-webkit-scrollbar {
+    display: none;
+}
+
+.recomendation_txt span {
+    background-color: var(--surface-hover);
+    /* #272727 */
+    color: var(--text-primary);
+    padding: 0.4em 1em;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.recomendation_txt span:hover {
+    background-color: var(--border);
+}
+
+
+.yt_app {
+    background: url(images/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.webp);
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.top_yt_app>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: ;
+}
+
+.navbar_bottom div {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_bottom span {
+    font-size: 0.7rem;
+}
